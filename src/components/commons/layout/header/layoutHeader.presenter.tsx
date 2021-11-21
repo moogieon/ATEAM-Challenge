@@ -1,5 +1,3 @@
-import { Menu, Dropdown, Space } from "antd";
-import { ILayoutHeaderUI } from "./layoutHeader.types";
 import {
   Wrapper,
   HeaderWrapper,
@@ -12,23 +10,14 @@ import {
   Logout,
 } from "./layoutHeader.styles";
 
-export default function LayoutHeaderUI(props: ILayoutHeaderUI): JSX.Element {
-  // const categoryList = (
-  //   <Menu>
-  //     <Menu.Item></Menu.Item>
-  //   </Menu>
-  // );
-
+export default function LayoutHeaderUI() {
   return (
     <>
       <Wrapper>
         <HeaderWrapper>
           <HeaderLeftWrapper>
             <Title>
-              <TitleImg
-                src={"images/자산 1@3x 3.png"}
-                onClick={props.onClickTitle}
-              />
+              <TitleImg src={"images/자산 1@3x 3.png"} />
             </Title>
           </HeaderLeftWrapper>
           <HeaderRightWrapper>

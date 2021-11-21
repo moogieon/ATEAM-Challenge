@@ -1,4 +1,4 @@
-import Layout from "../src/commons/layout";
+import Layout from "../src/components/commons/layout";
 import "../styles/globals.css";
 import "antd/dist/antd.css";
 import { createContext } from "react";
