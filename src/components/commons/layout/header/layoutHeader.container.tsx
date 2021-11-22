@@ -1,5 +1,17 @@
+import { useState } from "react";
 import LayoutHeaderUI from "./layoutHeader.presenter";
 
 export default function LayoutHeader() {
-  return <LayoutHeaderUI />;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onClickNavi = () => {
+    setIsOpen((prev) => !prev);
+  };
+  return (
+    <LayoutHeaderUI
+      onClickNavi={onClickNavi}
+      isOpen={isOpen}
+      setIsOpen={setIsOpen}
+    />
+  );
 }

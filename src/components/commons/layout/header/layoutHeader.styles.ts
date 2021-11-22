@@ -1,6 +1,4 @@
 import styled from "@emotion/styled";
-import { BsFillBagCheckFill, BsJustify } from "react-icons/bs";
-
 export const Wrapper = styled.div`
   width: 100%;
   height: 70px;
@@ -9,6 +7,9 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #1565c0;
+  @media (max-width: 768px) {
+    height: 44px;
+  }
 `;
 
 export const HeaderWrapper = styled.div`
@@ -31,6 +32,9 @@ export const HeaderRightWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-right: 40px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.div``;
@@ -64,4 +68,28 @@ export const Logout = styled.div`
   height: 20px;
   padding-left: 32px;
   color: #ffffff;
+`;
+export const MenueBox = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    margin-right: 18px;
+    display: flex;
+    flex-direction: column;
+    :hover {
+      cursor: pointer;
+    }
+  }
+`;
+export const Menu = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    border-bottom: 2px solid #ffffff;
+    width: 18px;
+
+    display: block;
+    color: #ffffff;
+    margin-bottom: 3px;
+  }
 `;

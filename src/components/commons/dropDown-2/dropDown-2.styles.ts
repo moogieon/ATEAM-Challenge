@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
   top: 235px;
   background-color: #ffffff;
   display: flex;
-
   flex-direction: column;
   padding: 17px 0px 17px 12px;
+  z-index: 100;
 `;
 export const Item = styled.input`
   margin-right: 10px;

@@ -1,17 +1,19 @@
-import { ChangeEventHandler, InputHTMLAttributes } from "react";
+import { ChangeEventHandler } from "react";
 
 export interface IMainUIPorps {
-  serverData: any;
   isMethod: boolean;
   isMaterial: boolean;
   onClickMethod: () => void;
   onClickMaterial: () => void;
   onClickMaterialList: ChangeEventHandler<HTMLInputElement>;
   onClickMethodList: ChangeEventHandler<HTMLInputElement>;
+  Methodfillter: Array<string>;
+  Materialfillter: Array<string>;
+  cheked: boolean;
+  onChangechked: () => void;
+  onClickRefresh: () => void;
 }
 export interface IMainStylePorps {
-  isEdit: string;
-  edit: "대기중" | "상담중";
-  Methodfillter: [];
-  Materialfillter: [];
+  Methodfillter: Array<string>;
+  Materialfillter: Array<string>;
 }

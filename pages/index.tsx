@@ -11,7 +11,7 @@ export default function Home() {
           content="https://ssomee.shop/images/ssomee_main_img.png"
         />
 
-        {/* <meta property="og:url" content="https://ssomee.shop" />
+        {/* <meta property="og:url" content="https://" />
         <meta
           property="og:description"
           content="파트너님에게 딱 맞는 요청"

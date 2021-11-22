@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { Wrapper, Item, Name, ItemBox } from "./dropDown-1.styles";
 
+const dataLists = [
+  { id: 1, name: "밀링" },
+  { id: 2, name: "선반" },
+];
+
 interface Iprops {
   onClickMethodList: any;
+  Methodfillter: Array<string>;
 }
 export function DropDown1(props: Iprops) {
-  const dataLists = [
-    { id: 1, name: "밀랑" },
-    { id: 2, name: "선반" },
-  ];
   return (
     <>
       <Wrapper>
