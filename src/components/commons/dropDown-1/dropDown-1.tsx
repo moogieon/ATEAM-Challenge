@@ -15,10 +15,9 @@ export function DropDown1(props: Iprops) {
     <>
       <Wrapper>
         {dataLists.map((data) => (
-          <ItemBox>
+          <ItemBox key={data.id}>
             <Name>
               <Item
-                key={data.id}
                 type="checkbox"
                 id={data.name}
                 onChange={props.onClickMethodList(data.name)}
