@@ -27,6 +27,7 @@ yarn install
 ```javascript
 yarn dev
 ```
+If you run server ` json-server ./data.json --port 4000`
 
 If you enter `yarn dev`
 
